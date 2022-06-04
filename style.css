@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-size: 5vh;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 30px;
+    font-weight: 50px;    
+    color: rgb(243, 74, 12);
+    background-color: rgb(4, 75, 71);
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+.container{
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin-top: 5vh;
+    font-family: sans-serif;
+    font-weight: 100px;    
+    color: white;
+}
+.card{
+    width: 400px;
+    height: 250px;
+    position: relative;
+    background: linear-gradient(to top right, rgb(11,63,87), rgb(78,68,68));
+    box-shadow: 1px 20px 50px grey;
+    border-radius: 5px;
+    padding: 1em;
+    z-index: 2;
+    margin: 10px;
+}
+
+.card .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1px;
+}
+
+h1{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: orangered
+}
+h2{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card .mid{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    align-items: center;
+    
+}
+
+.card .mid .card-number span{
+    padding: 3px 0px;
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 3px;
+
+}
+
+.card-number span + span{
+    margin: 6px 6px;
+}
+
+.first-number{
+    margin-left: 30px;
+    font-size: 10px;
+}
+
+.card .bottom{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: -50px;
+}
+.card .bottom span{
+    padding: 0px 0px;
+    font-size: 16px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.card .bottom .express span{
+    margin-left: 10px;
+}
+
+.express{
+    display: flex;
+}
+
+.express h2{
+    font-size: 5px;
+    text-transform: capitalize;
+    
+}
+
+.card .bottom .logo span{
+    color: red;
+}
+
+.card .card-holder span{
+    width: 220px;
+    height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.card .card-holder{
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .card-holder h3{
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.bottom span + span{
+    margin-left: 5px;
+}
+
+.input-container{
+    color: #000;
+    font-size:20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-top: 80px;
+}
+ 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin:0;
+}
+
+input[type=number] {
+    border: 2px solid orangered;
+    border-radius: 25px;
+    height: 40px;
+    width: 330px;
+    display: block;
+    padding: 5px;
+    color: rgb(5, 77, 65);
+    font-size:25px;
+    letter-spacing: 5px;
+    font-family:fantasy;
+    font-style: bolder;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.input-container button{
+    margin-top: 40px;
+    padding: 10px;
+    color:#fff;
+    background-color: rgb(11,63,87);
+    border-radius: 20px;
+    width: 150px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    box-shadow: 0px 0px 20px black;
+    border:3px solid orangered;
+}
+
+.input-container button:hover{
+    margin-top: 40px;
+    padding: 10px;
+    color: white;
+    background-color: orangered;
+    border-radius: 20px;
+    width: 150px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border:3px solid rgb(11,63,87);
+    box-shadow: 0px 0px 20px black;
+    cursor: pointer;
+}
+
+
+#valid{
+ font-size: 30px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ margin-top: 50px;
+ margin-bottom: 60px;
+ color: rgb(7, 139, 14);
+}
+
+#right_sign{
+    font-size: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 150px;
+    margin-bottom: 60px;
+    color: rgb(7, 139, 14);
+   }
+
+#Invalid{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    color: red;
+   }
+   
+#wrong_sign{
+       font-size: 90px;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       margin-top: 150px;
+       margin-bottom: 60px;
+       color: red;
+}
+
+#check_again{
+    padding: 10px 30px 10px 30px;
+    color:#000;
+    font-family:serif;
+    background-color: rgb(211, 233, 9);
+    font-weight:bolder ;
+    font-size: 25px;
+    border:2px solid #000;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#check_again:hover{
+    padding: 10px 30px 10px 30px;
+    color:#000;
+    background-color: rgb(10, 222, 250);
+    border-radius: 20px;
+    font-weight: bolder;
+    font-family: serif;
+    font-size: 25px;
+    box-shadow: 0px 0px 20px black;
+    border:3px solid #000;
+}
+
+#valid{
+    animation: valid 3s linear infinite;
+}
+@keyframes valid
+{
+    0%{
+        color: green;
+    }
+    20%
+    {
+        color: white;
+    }
+    40%{
+        color:green;
+    }
+    60%
+    {
+        color: white;
+    }
+    80%{
+        color: green;
+    }
+    100%
+    {
+        color: white;
+    }
+    
+}
+
+#Invalid{
+    animation: invalid 3s linear infinite;
+}
+@keyframes invalid
+{
+    0%{
+        color: red;
+    }
+    20%
+    {
+        color: white;
+    }
+    40%{
+        color:red;
+    }
+    60%
+    {
+        color: white;
+    }
+    80%{
+        color: red;
+    }
+    100%
+    {
+        color: white;
+    }
+    
+}
